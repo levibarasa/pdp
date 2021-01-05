@@ -17,7 +17,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#usersModal"  data-target="#usersModal" data-toggle="modal" >New Event</a>
-               </div> 
+               </div>
         </div>
     </div>
     <div class="container pd-x-0">
@@ -55,11 +55,10 @@
                                 <input type="text" class="form-control" id="name" name="name" placeholder="name" required>
                             </div>
                             <div class="form-group ">
-                                <label for="location">Event Type</label>
-                                <input type="text" class="form-control" id="eventype" name="eventype" placeholder="Event Type" required>
-                                <select  name="category" id="category"   class="selectpicker">
-                                <option value="MANUFACTURER">MANUFACTURER</option>
-                                <option value="VENDOR">VENDOR</option>
+                                <label for="location">Event Type</label><br/>
+                                <select  name="eventype" id="eventype"   class="selectpicker">
+                                <option value="Internal">Internal</option>
+                                <option value="External">External</option>
                                 </select>
                             </div>
                             <div class="form-group ">
@@ -107,7 +106,7 @@
 
 
                 <script>
-                $(function () { 
+                $(function () {
 
                     'use strict'
 
@@ -169,7 +168,7 @@
             </script>
             <script>
         function deleteData(dt){
-            if(confirm("Are you sure you want to Cancel this Event?")){ 
+            if(confirm("Are you sure you want to Cancel this Event?")){
                 $.ajax({
                     Type:'DELETE',
                     url:$(dt).data("url"),

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Event; 
+use App\Models\Event;
 use Yajra\DataTables\DataTables;
 
 class EvntController extends Controller
@@ -57,12 +57,12 @@ class EvntController extends Controller
                     $url = url('events/'.$row->id);
                     $edit ="<a class='btn btn-primary btn-icon btn-sm'  href='events/".$row->id."/edit' title='Edit'> <i class='icon ion-ios-create mr-2'></i>Edit</a>";
                     $delete ="<button data-url='".$url."' onclick='deleteData(this)' class='btn btn-action btn-danger btn-xs' title='Disable'><i class='nav-icon fas fa-trash-alt'></i> Cancel</button>";
-                return $edit." ".$delete; 
+                return $edit." ".$delete;
             })
 
                 ->rawColumns(['action'])
                 ->editColumn('id','{{$id}}')
-                ->make(true); 
+                ->make(true);
 
         }
 
@@ -92,10 +92,11 @@ class EvntController extends Controller
      */
     public function store(Request $request)
     {
-         
+
         Event::create([
             "events"=>$request->events,
             "name"=>$request->name,
+            "eventype"=>$request->eventype,
             "description"=>$request->descrption,
             "location"=>$request->location
         ]);
@@ -115,7 +116,7 @@ class EvntController extends Controller
                 ),
         );
          self::sendSms($data);
- 
+
          return back()->with('success','Event created successfully');
     }
 
@@ -154,7 +155,8 @@ class EvntController extends Controller
     public function update(Request $request, $id)
     {
         $data =  Event::find($id);
-        $data->name = $request->name; 
+        $data->name = $request->name;
+        $data->eventype = $request->eventype;
         $data->location = $request->location;
         $data->description = $request->description;
         $data->events = $request->events;
@@ -163,7 +165,7 @@ class EvntController extends Controller
         //Toastr::success('Event Updated Successfully','Success');
         // return back()->with('success','Event Updated successfully');
            return redirect()->route('events.index')->with('success','Event Updated successfully');
-         
+
        }else{
        // Toastr::error('Sorry, Event Can not be Updated!, Try again Later','Error');
            return redirect()->back();
@@ -178,10 +180,10 @@ class EvntController extends Controller
      */
     public function destroy($id)
     {
-        $data = Event::find($id); 
-        if($data->delete()){ 
+        $data = Event::find($id);
+        if($data->delete()){
         return new JsonResponse(["status"=> true]);
-        }else{ 
+        }else{
         return new JsonResponse(["status"=> false]);
         }
     }

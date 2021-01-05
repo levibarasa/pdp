@@ -11,7 +11,7 @@
                 </ol>
             </nav>
         </div>
-        
+
     </div>
     <div class="container pd-x-0">
 
@@ -21,19 +21,19 @@
             <table id="owners" class="table">
                 <thead>
                 <tr>
-                    <th class="wd-20p">First Name</th>
-                    <th class="wd-20p">Last Name</th>
+                    <th class="wd-15p">First Name</th>
+                    <th class="wd-15p">Last Name</th>
                     <th class="wd-15p">Phone Number</th>
                     <th class="wd-15p">Email</th>
                     <th class="wd-15p">County</th>
-                    <th class="wd-15p">Status</th>
+                    <th class="wd-22p"> Volunteer Contacted</th>
                     <th class="wd-20p">Action</th>
                 </tr>
                 </thead>
             </table>
         </div>
 
-        
+
         @stop
         @push("scripts")
 
@@ -48,12 +48,12 @@
 
 
                 <script>
-                $(function () { 
+                $(function () {
 
                     'use strict'
 
 
-                    var url = "{!! url('datatable')!!}";
+                    var url = "{!! url('volunteers')!!}";
                     $('#owners').DataTable({
                         responsive: true,
                         processing: true,
@@ -70,9 +70,9 @@
                         ],
                         "pageLength": 50,
                         'order': [[4, 'desc']],*/
-                        
+
                         columns: [
-                            
+
                             /*{data: 'project_id', name: 'project_id'},*/
                             {data: 'firstname', name: 'firstname'},
                             {data: 'lastname', name: 'lastname'},
@@ -124,7 +124,7 @@
             </script>
             <script>
         function deleteData(dt){
-            if(confirm("Are you sure you want to Disable this Event?")){ 
+            if(confirm("Are you sure you want to Disable this Event?")){
                 $.ajax({
                     Type:'DELETE',
                     url:$(dt).data("url"),

@@ -14,6 +14,7 @@ class Eventmigration extends Migration
             $table->string('name');
             $table->text('description');
             $table->text('location');
+            $table->string('eventype');
             $table->timestamp('events');
             $table->timestamps();
         });

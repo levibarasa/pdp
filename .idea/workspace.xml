@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddd8155c-8baf-4191-8e2a-36042267e7f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/textfile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pdp-bootstrap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/approvevolunteer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EvntController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EvntController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VolunteersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VolunteersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_15_172042_eventmigration.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_15_172042_eventmigration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/events.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/volunteer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/volunteer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +172,10 @@
       <workItem from="1608649537542" duration="419000" />
       <workItem from="1608649631948" duration="1639000" />
       <workItem from="1608653068971" duration="23000" />
+      <workItem from="1609613095962" duration="1715000" />
+      <workItem from="1609614866509" duration="445000" />
+      <workItem from="1609614438568" duration="1447000" />
+      <workItem from="1609616141441" duration="130000" />
     </task>
     <servers />
   </component>
@@ -184,9 +183,13 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="519" y="291" key="NewPhpFileDialog" timestamp="1608650950805">
+    <state x="415" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609614661508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="519" y="291" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608650950805" />
+    <state x="415" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609614661508" />
+    <state x="519" y="291" key="NewPhpFileDialog" timestamp="1609614992078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="519" y="291" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609614992078" />
   </component>
 </project>
