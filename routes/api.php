@@ -25,7 +25,7 @@ Route::get('/counties', [LocationController::class, 'counties']);
 
 Route::get('/wards', [LocationController::class, 'wards']);
 
-Route::get('/volunteers', [LocationController::class, 'volunteers']);
+//Route::get('/testMpesa', [PaymentsController::class, 'testMpesa']);
 
 
 Route::get('/payment_result', [PaymentsController::class, 'index']);

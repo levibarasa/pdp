@@ -20,11 +20,11 @@ class DatabaseSeeder extends Seeder
 
         $user = \App\Models\User::create([
             'name' => 'Cleophas Okioi',
-            'email' => 'cleophas.okioi@gmail.com',
-            'password' => \Hash::make('password'),
+            'email' => 'lvbarasa@gmail.com',
+            'password' => \Hash::make('12345678'),
             'docnumber'=>123456789
         ]);
-        $user->assignRole("adminpdp");
+       // $user->assignRole("");
 
 
 

@@ -24,7 +24,7 @@ class VolunteersController extends Controller
 
                 ->addIndexColumn()
                 ->addColumn('action', function($row){
-                    $edit ="<a class='btn btn-action btn-warning btn-xs' href='volunteers/".$row->id."/edit' title='Edit'><i class='nav-icon fas fa-edit'></i>Approve</a>";
+                    $edit ="<a class='btn btn-action btn-warning btn-xs' href='volunteers/".$row->id."/edit' title='Edit'><i class='nav-icon fas fa-edit'></i>Contact</a>";
 
 
                     // $btn = '<a href="#" class="btn btn-primary btn-icon btn-sm" ><i class="icon ion-ios-create mr-2"></i>Approve </a>';
